@@ -1,0 +1,7 @@
+İsim : Hatice Çetin
+Yaş: 18
+ Boy: 1.6
+ Kilo: 50.0
+Vücut Kitle İndeksi: 19.5
+Değer Aralığı: Normal Kilolu
+Kayıt Tarihi: Fri Jul 19 16:44:52 2024
