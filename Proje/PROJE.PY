@@ -57,6 +57,8 @@ while True:
     ay=int(input("İşlem yapmak istediğniz ayın numarasını giriniz(1 den 12 e kadar): ")) 
     if ay>12:
         print("Ay seçerken hata yaptınız.Tekrar seçiniz.")
+    elif yıl==2024 and ay<=8:
+        print("Ay seçerken hata yaptınız.Tekrar seçiniz.")
     else :
         ayı=aylar[ay]
         break
@@ -387,8 +389,8 @@ bilet_fiyatı.bilet_fiyat()
 
 # Kullanıcıdan kişi bilgilerini aldık.
 def kişi_bilgileri():
-    ad=str(input("Lütfen adınızı giriniz:"))
-    soyad=str(input("Lütfen soyadınızı giriniz:"))
+    ad=str(input("Lütfen adınızı giriniz:")).capitalize()
+    soyad=str(input("Lütfen soyadınızı giriniz:")).upper()
     tc=int(input("Lütfen 11 haneli kimlik numaranızı giriniz:"))
     yaş=int(input("Lütfen yaşınızı giriniz:"))
 
@@ -401,7 +403,7 @@ def kişi_bilgileri():
         file.write(f"Uçuş tarihi: {gün}-{ayı}-{yıl}\n")
         file.write(f"Uçuş saati: {uçuş}\n")
 kişi_bilgileri()
-
+print("Bilet hazırlandı.İyi yolculuklar dileriz.")
 
 
 
